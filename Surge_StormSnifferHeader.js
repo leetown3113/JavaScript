@@ -1,10 +1,4 @@
 
-[rewrite_local]
-^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ url script-request-header https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferHeader.js
-
-[mitm]
-hostname = *.x-storm.com
-*/
 
 const $ = new Env("stormSnifferHeader");
 !(async () => {
