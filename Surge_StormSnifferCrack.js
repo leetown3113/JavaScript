@@ -1,12 +1,4 @@
-/*
-解锁StormSniffer
 
-[rewrite_local]
-^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferCrack.js
-
-[mitm]
-hostname = *.x-storm.com
-*/
 const $ = new Env("stormSniffer");
 let obj = JSON.parse($response.body);
 const key = $.getdata('storm_sniffer_uid');
