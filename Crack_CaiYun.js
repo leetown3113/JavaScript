@@ -37,7 +37,7 @@ if ($request.url.indexOf('user') != -1){
     chxm1023.result.wt.svip_given = 9999;
     chxm1023.result.wt.ranking_above = 99;
     chxm1023.result.is_phone_verified = true;
-    chxm1023.result.name = "叮当猫の分享频道";
+    chxm1023.result.name = "多喝热水";
     chxm1023.result.avatar = "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLia6zPUuGQKVOJk2gnjpjHxSIuH7XaOJF2gEk9ic35ibib4QzUcbvNu6EpdHDc1Vciat1xg63ibK6EptWw/132";
     chxm1023.result.phone_num = "13145200000";
     chxm1023.result.vip_take_effect = 1;
@@ -47,13 +47,13 @@ if ($request.url.indexOf('user') != -1){
     chxm1023.result.svip_take_effect = 1;
     chxm1023.result.vip_type = "s";
     chxm1023.result.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJ1c2VyX2lkIjoiNWY1YmZjNTdkMmM2ODkwMDE0ZTI2YmI4Iiwic3ZpcF9leHBpcmVkX2F0IjoxNzA1MzMxMTY2LjQxNjc3MSwidmlwX2V4cGlyZWRfYXQiOjB9.h_Cem89QarTXxVX9Z_Wt-Mak6ZHAjAJqgv3hEY6wpps";
-    chxm1023.result.bound_status.qq.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.weixin.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.caiyun.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.twitter.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.facebook.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.apple.username = "https://t.me/chxm1023";
-    chxm1023.result.bound_status.weibo.username = "https://t.me/chxm1023";
+    chxm1023.result.bound_status.qq.username = "不";
+    chxm1023.result.bound_status.weixin.username = "如";
+    chxm1023.result.bound_status.caiyun.username = "自";
+    chxm1023.result.bound_status.twitter.username = "挂";
+    chxm1023.result.bound_status.facebook.username = "东";
+    chxm1023.result.bound_status.apple.username = "南";
+    chxm1023.result.bound_status.weibo.username = "枝";
 }
 
 $done({ body: JSON.stringify(chxm1023)});
