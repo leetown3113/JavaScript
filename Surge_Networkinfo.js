@@ -205,7 +205,6 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       title: getSSID() ?? getCellularInfo(),
       content:
         getIP() +
-        `-----------------------------------------\n` +
         `节点IP：${info.query}\n` +
         `运营商：${info.isp}\n` +
         `所在地：${info.country} - ${info.city}`,
