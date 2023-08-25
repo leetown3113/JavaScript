@@ -180,9 +180,9 @@ function getIP() {
     info = ['网路可能中断', '请手动刷新以重新获取 IP'];
   } else {
     if (v6?.primaryAddress) info.push(`IPv6:${v6?.primaryAddress}`);
-    if (v4?.primaryAddress) info.push(`-----------------------------------------\n设备IP:${v4?.primaryAddress}`);
+    if (v4?.primaryAddress) info.push(`-----------------------------------------\n【设备IP】：${v4?.primaryAddress}`);
     if (v6?.primaryRouter && getSSID()) info.push(`IPv6:${v6?.primaryAddress}`);
-    if (v4?.primaryRouter && getSSID()) info.push(`路由IP:${v4?.primaryRouter}`);
+    if (v4?.primaryRouter && getSSID()) info.push(`【路由IP】：${v4?.primaryRouter}`);
     
   }
   info = info.join("\n");
