@@ -20,7 +20,7 @@ $done({
     title:"Surge Pro 运行"+startTime,
 content:"MitM "+icon_status(mitm_status.enabled)+" | Rewrite "+icon_status(rewrite_status.enabled)+" | JavaScript "+icon_status(scripting_status.enabled),
     icon: icon_s?"command.circle":"exclamationmark.triangle",
-   "icon-color":icon_s?"#555555":"#555555"
+   "icon-color":icon_s?"#007afe":"#007afe"
 });
 })();
 function icon_status(status){
