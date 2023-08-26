@@ -39,7 +39,7 @@
     title: `${args.title} | ${bytesToSize(total)} | 已用${bytesToSize(used)}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#555555",
+    "icon-color": args.color || "#007afe",
   });
 })();
 
