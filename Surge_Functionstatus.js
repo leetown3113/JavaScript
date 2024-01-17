@@ -17,7 +17,7 @@ if ($trigger == "button") {
 	$notification.post("配置重载","","\u2611 配置重载成功。\n\u2611 DNS刷新成功。")
 };
 $done({
-    title:"𝗦𝘂𝗿𝗴𝗲 𝗣𝗿𝗼 运行"+startTime,
+    title:"Surge Pro 运行"+startTime,
 content:"MitM "+icon_status(mitm_status.enabled)+" | Rewrite "+icon_status(rewrite_status.enabled)+" | JavaScript "+icon_status(scripting_status.enabled),
     icon: icon_s?"command.circle":"exclamationmark.triangle",
    "icon-color":icon_s?"#007afe":"#007afe"
