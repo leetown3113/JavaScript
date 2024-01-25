@@ -349,7 +349,7 @@ if (typeof $argument !== "undefined" && $argument !== "") {
         });
       result = {
         title: ptitle + ": " + ALL_NUM,
-        content: `MitM${mitm ? "" : ""}${hostnameNUM}  Script${
+        content: `MitM${mitm ? "" : ""}${hostnameNUM} "|" Script${
           scripting ? "" : ""
         }${ScriptNUM}  Re${rewrite ? "" : ""}${RewriteNUM}`,
         icon: icons,
