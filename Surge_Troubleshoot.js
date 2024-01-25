@@ -1,4 +1,4 @@
-// @xream @key
+// @xream @SurgeTool
 const UPDATA = "2024-01-17 22:39:17";
 const isPanel = typeof $input != "undefined",
   stname = "SurgeTool_Rule_NUM",
@@ -9,8 +9,8 @@ let url = typeof $request !== "undefined" && $request.url ? $request.url : "0",
 
 let result = {},
   ptitle = "Surge Rule",
-  icons = "heart.text.square",
-  icolor = "#6699FF",
+  icons = "personalhotspot.circle",
+  icolor = "#007afe",
   type = false,
   list = false,
   push = true,
