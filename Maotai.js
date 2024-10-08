@@ -10,5 +10,3 @@ const headers = $request.headers
 headers['PRIVATE-TOKEN'] = 'JMYS13evfmkL8dyBZMs8U9zv'
 
 $done({ url, headers })
-
-$notification.post('Shadowrocket', 'Browser web page', 'https://')
