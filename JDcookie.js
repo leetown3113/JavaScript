@@ -129,45 +129,7 @@ if (ptPinMatch && ptKeyMatch) {
 }
 
 // ==================== 提交到API服务器 ====================
-function submitToAPI(cookie, pt_pin) {
-    const requestBody = {
-        cookie: cookie
-    };
 
-    const options = {
-        url: API_URL,
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestBody)
-    };
-
-    console.log(`🚀 正在提交到API服务器: ${API_URL}`);
-
-    $httpClient.post(options, function(error, response, data) {
-        if (error) {
-            console.log(`❌ API提交失败: ${error}`);
-            notifyResult(pt_pin, false, `网络错误: ${error}`);
-        } else {
-            try {
-                const result = JSON.parse(data);
-                console.log(`📥 API返回: ${data}`);
-                
-                if (result.code === 200) {
-                    console.log(`✅ API提交成功: ${result.message}`);
-                    notifyResult(pt_pin, true, result.message, result.data);
-                } else {
-                    console.log(`❌ API提交失败: ${result.message}`);
-                    notifyResult(pt_pin, false, result.message);
-                }
-            } catch (e) {
-                console.log(`❌ 解析API返回失败: ${e}`);
-                notifyResult(pt_pin, false, "解析返回数据失败");
-            }
-        }
-        $done({});
-    });
-}
 
 // ==================== 通知 ====================
 function notifyResult(pt_pin, success, message, data) {
